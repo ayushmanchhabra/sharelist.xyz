@@ -1,0 +1,23 @@
+name: client
+
+on:
+  pull_request:
+    paths:
+      - "client/**/*"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4.1.1
+      - name: Setup Node
+        uses: actions/setup-node@v4.0.2
+        with:
+          node-version: "20.11.1"
+      - name: Install dependencies
+        run: npm install
+      - name: Run tests
+        run: npm test
+```
