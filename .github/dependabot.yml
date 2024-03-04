@@ -1,0 +1,27 @@
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: .github/workflows
+    schedule:
+      interval: daily
+    groups:
+      devops:
+        patterns:
+          - '*'
+  - package-ecosystem: npm
+    directory: ./client
+    schedule:
+      interval: daily
+    versioning-strategy: increase
+    groups:
+      client:
+        patterns:
+          - '*'
+  - package-ecosystem: gomod
+    directory: ./server
+    schedule:
+      interval: daily
+    groups:
+      server:
+        patterns:
+          - '*'

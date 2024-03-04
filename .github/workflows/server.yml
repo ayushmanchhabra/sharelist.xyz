@@ -1,0 +1,24 @@
+name: server
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4.1.1
+        with:
+          sparse-checkout: 'server'
+      - name: Setup Go
+        uses: actions/setup-go@v5.0.0
+        with:
+          go-version: '1.22.0'
+      - name: Server test suite
+        run: |
+          cd server
+          go mod download
+          go test -v

@@ -1,0 +1,26 @@
+name: client
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4.1.1
+        with:
+          sparse-checkout: 'client'
+      - name: Setup Node
+        uses: actions/setup-node@v4.0.2
+        with:
+          node-version: "20.11.1"
+      - name: Client test suite
+        run: |
+          cd client
+          npm ci
+          npm run lint
+          npm test
+
