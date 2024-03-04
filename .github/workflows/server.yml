@@ -14,7 +14,7 @@ jobs:
         with:
           sparse-checkout: 'server'
       - name: Setup Go
-        uses: actions/setup-node@v5.0.0
+        uses: actions/setup-go@v5.0.0
         with:
           go-version: '1.22.0'
       - name: Install dependencies
