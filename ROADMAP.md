@@ -34,7 +34,7 @@
 
 - Vitest for unit testing
 - Nightwatch for e2e and integration testing
-- Storybook for snapshot testing
+- Storybook for comprehensive testing
 
 ## Deployment
 
