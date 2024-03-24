@@ -1,5 +1,7 @@
 # Share List
 
+[Website](https://www.sharelist.xyz/) | [Designs](https://www.figma.com/file/O30CMQKNoG1TypljfKYnic/Share-List?type=design&node-id=0%3A1&mode=design&t=Pam0MbZs2O7vMwiH-1)
+
 Share music playlists across streaming services.
 
 ## Getting Started
