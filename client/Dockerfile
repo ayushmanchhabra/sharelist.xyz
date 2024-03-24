@@ -1,4 +1,7 @@
-FROM node:20.11.1-bullseye-slim@sha256:bc0ff0ad6f4a4817cf28fcafafe8ed3c0c56197ef67ecd21dce4a6400047151a
+FROM node:20.11.1-bullseye-slim
+
+LABEL org.opencontainers.image.source="https://github.com/ayushmanchhabra/sharelist.xyz"
+LABEL org.opencontainers.image.description="sharelist.xyz client"
 
 WORKDIR /app
 
@@ -11,4 +14,3 @@ COPY . .
 EXPOSE 5173
 
 CMD ["npm", "run", "dev"]
-
