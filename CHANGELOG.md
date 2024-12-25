@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.3.2](https://github.com/ayushmanchhabra/sharelist.xyz/compare/v0.3.1...v0.3.2) (2024-12-25)
+
+
+### Chores
+
+* **ci:** publish to GitHub pages on every push to main branch ([723e439](https://github.com/ayushmanchhabra/sharelist.xyz/commit/723e439514817ae3d024028d3f238792acab3524))
+* **ci:** remove release-please requirement from publish job ([9ca5a4c](https://github.com/ayushmanchhabra/sharelist.xyz/commit/9ca5a4c0bc0391eaaef033ed4637c339ce06d472))
+* **docs:** add license ([e43db53](https://github.com/ayushmanchhabra/sharelist.xyz/commit/e43db530233b75cf849b1a5570bca81679f9c763))
+* **docs:** move license ([8a09883](https://github.com/ayushmanchhabra/sharelist.xyz/commit/8a09883fe5e906312fc5b3e367691f39b40153ca))
+* move buttons down for mobile users ([63c92ad](https://github.com/ayushmanchhabra/sharelist.xyz/commit/63c92ad6274e84b9c5268c23b102b3bb5207a108))
+* update placeholder text for mobile users ([60988bb](https://github.com/ayushmanchhabra/sharelist.xyz/commit/60988bbc5c2702fc12aed4c642c4f5b40045d807))
+
 ## [0.3.1](https://github.com/ayushmanchhabra/sharelist.xyz/compare/v0.3.0...v0.3.1) (2024-12-25)
 
 
